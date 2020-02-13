@@ -1,12 +1,26 @@
 # base64
 Provides full cross browser (and legacy browser) support for Encoding and Decoding Base64 strings in Javascript and will work with Base64 encoding on the .NET platform
-
-## base64.encode
-
-## base64.Decode
-
-## atob and btoa override
-
-## Encode in C#
-
-## Decode in C#
+## base64.encode in javascript
+```javascript
+var encodedString = base64.encode(decodedString)
+```
+OR
+```javascript
+var encodedString = btoa(decodedString)
+```
+## base64.decode in javascript
+```javascript
+var decodedString = base64.decode(encodedString)
+```
+OR
+```javascript
+var decodedString = atob(encodedString)
+```
+## encode in C#
+```csharp
+var encodedString = Convert.ToBase64String(Encoding.UTF8.GetBytes(decodedString))
+```
+## decode in C#
+```csharp
+var decodedString = Encoding.UTF8.GetString(Convert.FromBase64String(encodedString))
+```
