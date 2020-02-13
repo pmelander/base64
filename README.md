@@ -4,7 +4,7 @@ Provides full cross browser (and legacy browser) support for Encoding and Decodi
 ```javascript
 var encodedString = base64.encode(decodedString)
 ```
-OR
+_OR_
 ```javascript
 var encodedString = btoa(decodedString)
 ```
@@ -12,7 +12,7 @@ var encodedString = btoa(decodedString)
 ```javascript
 var decodedString = base64.decode(encodedString)
 ```
-OR
+_OR_
 ```javascript
 var decodedString = atob(encodedString)
 ```
