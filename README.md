@@ -1,5 +1,8 @@
 # base64
-Provides full cross browser (and legacy browser) support for Base64 Encoding and Decoding true (not just merican) UTF-8 charset strings in Javascript. Will work with Base64 encoding and the UTF-8 charset on the .NET platform
+Provides full cross browser (and legacy browser) support for Base64 Encoding and Decoding true (not just merican) UTF-8 charset strings in Javascript. Will work with Base64 encoding and the UTF-8 charset on the .NET platform.
+
+It's a complete wonder that we in 2020 still don't have a decent international charset support.
+
 ## base64.encode in javascript
 ```javascript
 var encodedString = base64.encode(decodedString)
