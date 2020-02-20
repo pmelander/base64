@@ -21,9 +21,9 @@ var decodedString = atob(encodedString)
 ```
 ## encode in C#
 ```csharp
-var encodedString = Convert.ToBase64String(Encoding.UTF8.GetBytes(decodedString))
+var encodedString = Convert.ToBase64String(Encoding.UTF8.GetBytes(HttpUtility.UrlEncode(decodedString)))
 ```
 ## decode in C#
 ```csharp
-var decodedString = Encoding.UTF8.GetString(Convert.FromBase64String(encodedString))
+var decodedString = HttpUtility.UrlDecode(Encoding.UTF8.GetString(Convert.FromBase64String(encodedString)))
 ```
