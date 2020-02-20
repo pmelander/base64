@@ -38,7 +38,7 @@ public static class StringExtensions
         HttpUtility.UrlDecode(Encoding.UTF8.GetString(Convert.FromBase64String(str)));
 }
 ```
-### Usage
+#### Usage
 ```csharp
 var encodedString = "Decoded string".Base64Encode()
 ```csharp
