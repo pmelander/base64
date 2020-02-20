@@ -41,6 +41,8 @@ public static class StringExtensions
 #### Usage
 ```csharp
 var encodedString = "Decoded string".Base64Encode()
+```
+
 ```csharp
 var decodedString = "RW5jb2RlZCUyMHN0cmluZw==".Base64Decode()
 ```
