@@ -21,11 +21,11 @@ var decodedString = atob(encodedString)
 ```
 ## encode in C#
 ```csharp
-var encodedString = Convert.ToBase64String(Encoding.UTF8.GetBytes(HttpUtility.UrlEncode(decodedString)))
+var encodedString = Convert.ToBase64String(Encoding.UTF8.GetBytes(HttpUtility.UrlEncode("Decoded string")))
 ```
 ## decode in C#
 ```csharp
-var decodedString = HttpUtility.UrlDecode(Encoding.UTF8.GetString(Convert.FromBase64String(encodedString)))
+var decodedString = HttpUtility.UrlDecode(Encoding.UTF8.GetString(Convert.FromBase64String("RW5jb2RlZCUyMHN0cmluZw==")))
 ```
 ## C# Extension for string
 ```csharp
