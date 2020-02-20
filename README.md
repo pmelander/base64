@@ -27,3 +27,20 @@ var encodedString = Convert.ToBase64String(Encoding.UTF8.GetBytes(HttpUtility.Ur
 ```csharp
 var decodedString = HttpUtility.UrlDecode(Encoding.UTF8.GetString(Convert.FromBase64String(encodedString)))
 ```
+## C# Extension for string
+```csharp
+public static class StringExtensions
+{
+    public static string Base64Encode(this string str) =>
+        Convert.ToBase64String(Encoding.UTF8.GetBytes(HttpUtility.UrlEncode(str ?? string.Empty)));
+
+    public static string Base64Decode(this string str) =>
+        HttpUtility.UrlDecode(Encoding.UTF8.GetString(Convert.FromBase64String(str)));
+}
+```
+### Usage
+```csharp
+var encodedString = "Decoded string".Base64Encode()
+```csharp
+var decodedString = "RW5jb2RlZCUyMHN0cmluZw==".Base64Decode()
+```
